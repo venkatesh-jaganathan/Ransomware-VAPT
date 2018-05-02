@@ -1,0 +1,19 @@
+{
+  "name": "phase2",
+  "version": "1.0.0",
+  "description": "Ransomware analysis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ransomware",
+    "url"
+  ],
+  "author": "Venkat",
+  "license": "ISC",
+  "dependencies": {
+    "log4js": "^2.5.2",
+    "php-parser": "^2.2.0"
+  }
+}
