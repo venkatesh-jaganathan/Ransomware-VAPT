@@ -1,0 +1,26 @@
+<?php
+//for database access
+$a = $_GET['user'];
+$b = $_POST['pass'];
+$c = "SELECT * FROM users WHERE u = 'mysql_real_escape_string($a)'";
+$d = "SELECT * FROM users WHERE u = '$b'";
+
+//for cookie access
+$cookie_name = "user";
+$cookie_value = "John Doe";
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+
+$_SESSION["user"] = "John";
+
+$variable;
+
+$num = "hello world";
+$int = (int)$num;
+
+$string = 'This string is too long and will be cut short.';
+
+$string = substr($string,0,30);
+
+$dir = "/images/";
+// Sort in ascending order - this is default
+$direction = scandir($dir);
